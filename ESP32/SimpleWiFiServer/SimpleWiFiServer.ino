@@ -66,8 +66,8 @@ void loop(){
             client.println();
 
             // the content of the HTTP response follows the header:
-            client.print("<h1> Click <a href=\"/H\">here</a> to close the garage door. </h1><br>");
-            client.print("Click <a href=\"/L\">here</a> to open the garage door.<br>");
+            client.print("<h1 style='text-align: center'> Click <a href=\"/H\">here</a> to close the garage door.</h1><br>");
+            client.print("<h1 style='text-align: center'> Click <a href=\"/L\">here</a> to open the garage door.</h1><br>");
 
             // The HTTP response ends with another blank line:
             client.println();
