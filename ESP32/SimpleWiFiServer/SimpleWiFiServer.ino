@@ -1,7 +1,7 @@
 #include <WiFi.h>
 
-const char* ssid     = "74DA38FA9827";
-const char* password = "SN908022";
+const char* ssid     = "74DA38FAA793";
+const char* password = "SN940357";
 
 #include <ESP32_Servo.h>
 
@@ -66,8 +66,8 @@ void loop(){
             client.println();
 
             // the content of the HTTP response follows the header:
-            client.print("Click <a href=\"/H\">here</a> to turn the LED on pin 5 on.<br>");
-            client.print("Click <a href=\"/L\">here</a> to turn the LED on pin 5 off.<br>");
+            client.print("<h1> Click <a href=\"/H\">here</a> to close the garage door. </h1><br>");
+            client.print("Click <a href=\"/L\">here</a> to open the garage door.<br>");
 
             // The HTTP response ends with another blank line:
             client.println();

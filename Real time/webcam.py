@@ -6,6 +6,9 @@ import cv2
 import numpy as np
 import easyocr
 
+import webbrowser
+
+
 # Load a model
 model = YOLO('best.pt')  # load a custom model
 
@@ -38,6 +41,7 @@ while ret:
             if text == 'DSF478':
                 cv2.putText(frame, text.upper(), (int(x1), int(y1 - 10)),
                     cv2.FONT_HERSHEY_SIMPLEX, 1.3, (0, 255, 0), 3, cv2.LINE_AA)
+                webbrowser.open('http://192.168.2.107/L')
             else:
                 cv2.putText(frame, text.upper(), (int(x1), int(y1 - 10)),
                     cv2.FONT_HERSHEY_SIMPLEX, 1.3, (255, 0, 0), 3, cv2.LINE_AA)
